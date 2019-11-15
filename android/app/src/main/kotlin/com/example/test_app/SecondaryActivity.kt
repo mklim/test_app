@@ -1,0 +1,16 @@
+package com.example.test_app
+
+import androidx.annotation.NonNull;
+import io.flutter.embedding.android.FlutterActivity
+import io.flutter.embedding.engine.FlutterEngine
+import io.flutter.plugins.GeneratedPluginRegistrant
+
+class SecondaryActivity: FlutterActivity() {
+    override fun configureFlutterEngine(@NonNull flutterEngine: FlutterEngine) {
+        GeneratedPluginRegistrant.registerWith(flutterEngine)
+    }
+
+    override fun getDartEntrypointFunctionName(): String {
+        return "secondary"
+    }
+}
